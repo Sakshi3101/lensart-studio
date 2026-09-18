@@ -1,0 +1,97 @@
+/* LensArt Studio — Module: Wedding special */
+
+/* ─── WEDDING SPECIAL ─── */
+#wedding { background: #0d0d0d; }
+
+.wedding-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.wedding-images {
+  position: relative;
+  height: 580px;
+}
+
+.w-img {
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(0.88);
+}
+
+.w-img-main {
+  width: 70%;
+  height: 82%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.w-img-accent {
+  width: 52%;
+  height: 48%;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  border: 6px solid #0d0d0d;
+}
+
+.w-year-badge {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  background: var(--crimson);
+  color: var(--white);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.w-year-badge span:first-child {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.w-year-badge span:last-child {
+  font-size: 0.52rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.wedding-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.wf-item {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  padding: 1.2rem;
+  border-left: 3px solid var(--crimson);
+}
+
+.wf-item h5 {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--crimson);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.wf-item p {
+  font-size: 0.75rem;
+  color: #777;
+  line-height: 1.6;
+}

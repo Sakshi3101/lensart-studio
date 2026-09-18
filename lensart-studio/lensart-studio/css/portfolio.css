@@ -1,0 +1,102 @@
+/* LensArt Studio — Module: Portfolio gallery */
+
+/* ─── PORTFOLIO ─── */
+#portfolio { background: #0d0d0d; }
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-tab {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #333;
+  color: #777;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.filter-tab.active, .filter-tab:hover {
+  background: var(--crimson);
+  border-color: var(--crimson);
+  color: var(--white);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 12px;
+}
+
+.port-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.port-item:nth-child(1) { grid-column: span 5; grid-row: span 2; }
+.port-item:nth-child(2) { grid-column: span 4; }
+.port-item:nth-child(3) { grid-column: span 3; }
+.port-item:nth-child(4) { grid-column: span 4; }
+.port-item:nth-child(5) { grid-column: span 3; }
+.port-item:nth-child(6) { grid-column: span 4; grid-row: span 2; }
+.port-item:nth-child(7) { grid-column: span 4; }
+.port-item:nth-child(8) { grid-column: span 4; }
+
+.port-img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+  filter: brightness(0.8) saturate(0.9);
+}
+
+.port-item:hover .port-img {
+  transform: scale(1.06);
+  filter: brightness(0.6) saturate(1.2);
+}
+
+.port-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(192,0,26,0.7) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.port-item:hover .port-overlay { opacity: 1; }
+
+.port-info h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.port-info p {
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  margin-top: 0.2rem;
+}

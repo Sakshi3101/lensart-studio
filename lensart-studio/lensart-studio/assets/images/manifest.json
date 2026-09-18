@@ -1,0 +1,82 @@
+[
+  {
+    "file": "assets/images/hero/hero-1.jpg",
+    "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=90"
+  },
+  {
+    "file": "assets/images/hero/hero-2.jpg",
+    "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=90"
+  },
+  {
+    "file": "assets/images/hero/hero-3.jpg",
+    "url": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1800&q=90"
+  },
+  {
+    "file": "assets/images/hero/hero-4.jpg",
+    "url": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1800&q=90"
+  },
+  {
+    "file": "assets/images/hero/hero-5.jpg",
+    "url": "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=1800&q=90"
+  },
+  {
+    "file": "assets/images/portfolio/eternal-vows.jpg",
+    "url": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/corporate-gala.jpg",
+    "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/holi-celebration.jpg",
+    "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/studio-portrait.jpg",
+    "url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/sacred-union.jpg",
+    "url": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/music-festival.jpg",
+    "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/awards-night.jpg",
+    "url": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=85"
+  },
+  {
+    "file": "assets/images/portfolio/wedding-reception.jpg",
+    "url": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800&q=85"
+  },
+  {
+    "file": "assets/images/wedding/wedding-main.jpg",
+    "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=900&q=90"
+  },
+  {
+    "file": "assets/images/wedding/wedding-detail.jpg",
+    "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=600&q=85"
+  },
+  {
+    "file": "assets/images/testimonials/priya.jpg",
+    "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+  },
+  {
+    "file": "assets/images/testimonials/rohan.jpg",
+    "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+  },
+  {
+    "file": "assets/images/testimonials/vikram.jpg",
+    "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80"
+  },
+  {
+    "file": "assets/images/about/photographer.jpg",
+    "url": "https://images.unsplash.com/photo-1552168324-d612d77725e3?w=800&q=85"
+  },
+  {
+    "file": "assets/images/contact/studio.jpg",
+    "url": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&q=80"
+  }
+]

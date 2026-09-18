@@ -1,0 +1,65 @@
+/* LensArt Studio — Module: 5-step process */
+
+/* ─── PROCESS ─── */
+#process { background: var(--deep-black); }
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 3rem;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--crimson), transparent);
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.step-num-wrap {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--crimson);
+  background: var(--deep-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.step-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  color: var(--crimson);
+  letter-spacing: 2px;
+}
+
+.step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.step-desc {
+  font-size: 0.72rem;
+  color: #666;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}

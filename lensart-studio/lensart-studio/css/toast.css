@@ -1,0 +1,28 @@
+/* LensArt Studio — Module: Toast notification */
+
+/* ─── NOTIFICATION ─── */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--crimson-dark);
+  border: 1px solid var(--crimson);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  z-index: 3000;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-icon { font-size: 1.1rem; }

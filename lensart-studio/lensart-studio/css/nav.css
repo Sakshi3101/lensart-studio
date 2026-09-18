@@ -1,0 +1,107 @@
+/* LensArt Studio — Module: Navigation */
+
+/* ─── NAV ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(5,5,5,0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(192,0,26,0.25);
+  transition: all 0.4s;
+}
+
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-logo span { color: var(--crimson); }
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover { color: var(--crimson-bright); }
+
+.nav-cta {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.btn-outline {
+  padding: 0.55rem 1.5rem;
+  border: 1px solid var(--crimson);
+  color: var(--white);
+  background: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--crimson);
+  box-shadow: 0 0 20px rgba(255,0,34,0.4);
+}
+
+.btn-fill {
+  padding: 0.55rem 1.5rem;
+  background: var(--crimson);
+  color: var(--white);
+  border: 1px solid var(--crimson);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-fill:hover {
+  background: var(--crimson-bright);
+  box-shadow: 0 0 30px rgba(255,0,34,0.5);
+  transform: translateY(-1px);
+}
+
+/* ─── MOBILE NAV TOGGLE ─── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+  border: none;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: all 0.3s;
+  display: block;
+}

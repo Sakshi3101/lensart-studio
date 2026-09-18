@@ -1,0 +1,36 @@
+/* LensArt Studio — Module: Stats bar */
+
+/* ─── STATS BAR ─── */
+.stats-bar {
+  background: var(--crimson-dark);
+  padding: 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(192,0,26,0.4);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  border-right: 1px solid rgba(255,255,255,0.15);
+  padding: 0.5rem 0;
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.62rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+}

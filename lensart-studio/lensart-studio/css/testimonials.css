@@ -1,0 +1,77 @@
+/* LensArt Studio — Module: Testimonials */
+
+/* ─── TESTIMONIALS ─── */
+#testimonials { background: #0a0a0a; padding: 7rem 4rem; }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.testi-card {
+  background: #0f0f0f;
+  border: 1px solid #1e1e1e;
+  padding: 2.5rem;
+  position: relative;
+  transition: border-color 0.3s;
+}
+
+.testi-card:hover { border-color: rgba(192,0,26,0.4); }
+
+.testi-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  color: var(--crimson);
+  line-height: 0.5;
+  margin-bottom: 1.2rem;
+}
+
+.testi-text {
+  font-size: 0.82rem;
+  line-height: 1.9;
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #1e1e1e;
+}
+
+.testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--crimson);
+}
+
+.testi-author-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.testi-author-event {
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--crimson);
+  margin-top: 0.2rem;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.star { color: var(--gold); font-size: 0.9rem; }

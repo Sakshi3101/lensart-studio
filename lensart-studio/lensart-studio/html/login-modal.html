@@ -1,0 +1,29 @@
+<!-- ══════════ LOGIN MODAL ══════════ -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('login')">×</button>
+    <div class="modal-logo">LENS<span>ART</span></div>
+    <div class="modal-subtitle">Welcome Back — Login to Your Account</div>
+
+    <div class="modal-form-group">
+      <label>Email Address</label>
+      <input class="modal-input" type="email" placeholder="you@example.com" id="loginEmail">
+    </div>
+    <div class="modal-form-group">
+      <label>Password</label>
+      <input class="modal-input" type="password" placeholder="Enter your password" id="loginPass">
+    </div>
+    <div class="remember-row">
+      <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;">
+        <input type="checkbox"> Remember me
+      </label>
+      <a href="#">Forgot Password?</a>
+    </div>
+    <button class="modal-submit" onclick="handleLogin()">Login to Account</button>
+
+    <div class="modal-divider">OR</div>
+    <div class="modal-toggle">
+      Don't have an account? <a onclick="switchModal('login','register')">Register Now</a>
+    </div>
+  </div>
+</div>

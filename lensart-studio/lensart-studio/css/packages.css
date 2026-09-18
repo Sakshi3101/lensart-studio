@@ -1,0 +1,178 @@
+/* LensArt Studio — Module: Packages / pricing */
+
+/* ─── PACKAGES ─── */
+#packages { background: var(--deep-black); }
+
+.packages-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  align-items: end;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: #1a1a1a;
+  border: 1.5px solid #1a1a1a;
+}
+
+.pkg-card {
+  background: #0d0d0d;
+  padding: 3rem 2.5rem;
+  position: relative;
+  transition: all 0.4s;
+  cursor: default;
+}
+
+.pkg-card.featured {
+  background: var(--crimson-dark);
+  border-top: 3px solid var(--crimson-bright);
+}
+
+.pkg-card:hover:not(.featured) {
+  background: #111;
+}
+
+.pkg-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--crimson-bright);
+  color: var(--white);
+  font-size: 0.58rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  font-weight: 600;
+}
+
+.pkg-category {
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--crimson);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.pkg-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+  line-height: 1.1;
+}
+
+.pkg-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  margin: 1.5rem 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.pkg-currency {
+  font-size: 1rem;
+  color: var(--crimson);
+  font-weight: 600;
+}
+
+.pkg-price {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.pkg-period {
+  font-size: 0.68rem;
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.pkg-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pkg-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.78rem;
+  color: #bbb;
+  letter-spacing: 0.5px;
+}
+
+.pkg-features li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: var(--crimson);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.pkg-features li.highlight { color: var(--white); font-weight: 500; }
+
+.pkg-desc {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.pkg-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid;
+}
+
+.pkg-btn-outline {
+  background: transparent;
+  border-color: rgba(255,255,255,0.25);
+  color: var(--white);
+}
+
+.pkg-btn-outline:hover {
+  border-color: var(--crimson);
+  color: var(--crimson);
+}
+
+.pkg-btn-solid {
+  background: var(--crimson-bright);
+  border-color: var(--crimson-bright);
+  color: var(--white);
+}
+
+.pkg-btn-solid:hover {
+  background: #ff1a35;
+  box-shadow: 0 8px 30px rgba(255,0,34,0.45);
+}
+
+/* ─── PACKAGE ICONS ─── */
+.pkg-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* SVG icon (assets/icons) */
+.pkg-icon img { width: 2.6rem; height: 2.6rem; display: block; }

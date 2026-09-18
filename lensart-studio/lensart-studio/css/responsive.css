@@ -1,0 +1,22 @@
+/* LensArt Studio — Responsive breakpoints (keep last) */
+
+@media (max-width: 1100px) {
+  nav { padding: 1rem 2rem; }
+  section { padding: 5rem 2rem; }
+  .stats-bar { padding: 1.5rem 2rem; }
+  .hero-content { padding: 0 2rem; }
+  .packages-grid { grid-template-columns: 1fr; }
+  .packages-intro { grid-template-columns: 1fr; gap: 2rem; }
+  .wedding-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .wedding-images { height: 400px; }
+  .about-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .port-item:nth-child(n) { grid-column: span 12; }
+  .port-img { min-height: 250px; }
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .stats-bar { grid-template-columns: 1fr 1fr; }
+}

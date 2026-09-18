@@ -1,0 +1,204 @@
+/* LensArt Studio — Module: Hero slideshow */
+
+/* ─── HERO ─── */
+#hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-slides {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide.active { opacity: 1; }
+
+.hero-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(5,5,5,0.85) 0%,
+    rgba(5,5,5,0.55) 50%,
+    rgba(5,5,5,0.3) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 0 4rem;
+  max-width: 750px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--crimson-bright);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--crimson);
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 300;
+  line-height: 1.0;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--crimson-bright);
+}
+
+.hero-sub {
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  line-height: 1.9;
+  color: #bbb;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  max-width: 480px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-hero-primary {
+  padding: 1rem 2.5rem;
+  background: var(--crimson);
+  color: var(--white);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-hero-primary:hover {
+  background: var(--crimson-bright);
+  box-shadow: 0 8px 40px rgba(255,0,34,0.5);
+  transform: translateY(-2px);
+}
+
+.btn-hero-ghost {
+  padding: 1rem 2.5rem;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(245,240,235,0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-hero-ghost:hover {
+  border-color: var(--white);
+  background: rgba(245,240,235,0.07);
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.hero-scroll-indicator span {
+  font-size: 0.58rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, var(--crimson), transparent);
+  animation: scrollDrop 2s ease-in-out infinite;
+}
+
+@keyframes scrollDrop {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+.hero-counter {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 4rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.slide-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.slide-dot {
+  width: 20px;
+  height: 2px;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slide-dot.active {
+  background: var(--crimson);
+  width: 35px;
+}
+
+/* Slide images (local files in assets/images/hero/) */
+.hero-slide:nth-child(1) { background-image: url('../assets/images/hero/hero-1.jpg'); }
+.hero-slide:nth-child(2) { background-image: url('../assets/images/hero/hero-2.jpg'); }
+.hero-slide:nth-child(3) { background-image: url('../assets/images/hero/hero-3.jpg'); }
+.hero-slide:nth-child(4) { background-image: url('../assets/images/hero/hero-4.jpg'); }
+.hero-slide:nth-child(5) { background-image: url('../assets/images/hero/hero-5.jpg'); }
